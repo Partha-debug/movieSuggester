@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Suggester</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="hero is-dark is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Search for movies in both sides
+            <span class="icon">
+              <i class="fas fa-film"></i>
+            </span>
+          </h1>
+          <p class="subtitle">
+            We will compare them and choose the better one for you.
+          </p>
+        </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <div id="left-auto-complete"></div>
+          <div id="summary-left"></div>
+        </div>
+        <div class="column">
+          <div id="right-auto-complete"></div>
+          <div id="summary-right"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./utils.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
+
